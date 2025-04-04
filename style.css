@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    padding: 20px 160px;
+    padding: 20px 60px;
     height: 100vh;
     font-family: "Noto Sans", sans-serif;
     background-color: #ccee66;
@@ -11,10 +11,10 @@ body{
 
 body::before{
     content: '';
-    background-color: #090909;
+    background-color: #151515;
     position: absolute;
-    top: 0;
-    left: 600px;
+    top: -100px;
+    left: -775px;
     transform: rotate(-70deg);
     width: 100%;
     height: 160%;
@@ -26,13 +26,15 @@ body::after{
     top: 50%;
     left: 50%;
     color: #000;
-    font-size: 250px;
+    font-size: 200px;
     font-weight: bold;
     transform: translate(-50%, -50%);
 }
 
 .logo{
     width: 80px;
+    position: relative;
+    z-index: 1;
 }
 
 .caixa-principal{
@@ -40,6 +42,8 @@ body::after{
     justify-content: space-between;
     align-items: center;
     height: 75%;
+    position: relative;
+    z-index: 1;
 }
 
 .caixa-texto{
@@ -70,10 +74,11 @@ p{
 }
 
 .botao-carrinho:hover{
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 .imagem-tenis{
+    padding-top: 60px;
     width: 700px;
-    transform: rotate(-25deg);
+    transform: rotate(-30deg);
 }
